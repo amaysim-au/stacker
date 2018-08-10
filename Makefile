@@ -1,7 +1,7 @@
 .PHONY: build lint test-unit test-functional test
 
 build:
-	docker build -t remind101/stacker .
+	docker build -t amaysim/stacker:alpine3.8 .
 
 lint:
 	flake8 --exclude stacker/tests/ stacker
