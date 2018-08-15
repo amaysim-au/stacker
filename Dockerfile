@@ -9,6 +9,7 @@ RUN apk --no-cache update && \
     apk --no-cache add python2 py2-pip py-yaml build-base && \
     mkdir -p /stacks && \
     pip install --upgrade setuptools && \
+    pip install yamllint && \
     cd /tmp/stacker && \
     python setup.py install && \
     rm -rf /tmp/stacker && \
